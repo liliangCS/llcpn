@@ -1,31 +1,14 @@
-import React from 'react';
-
-function App() {
+import React from 'react'
+import Button, { ButtonType, ButtonSize } from './components/Button/button'
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello World</h1>
-        <h2>Hello World</h2>
-        <h3>Hello World</h3>
-        <h4>Hello World</h4>
-        <hr />
-        <code>
-          const a = b
-        </code>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Button className='111' > Hello </Button>
+      <Button btnType={ ButtonType.Primary } size={ButtonSize.Large} onClick={() => console.log(1)}> Hello </Button>
+      <Button btnType={ ButtonType.Link } to="http://www.baidu.com" disabled> Hello </Button>
+      <Button btnType={ ButtonType.Link } to="http://www.baidu.com" target="_blank"> Hello </Button>
+      <Button btnType={ ButtonType.Danger }> Hello </Button>
+      <Button btnType={ ButtonType.Default } autoFocus> Hello </Button>
     </div>
-  );
+  )
 }
-
-export default App;
