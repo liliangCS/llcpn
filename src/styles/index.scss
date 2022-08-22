@@ -1,9 +1,12 @@
-// 导入样式变量
+// 样式变量
 @import "variables";
-// 导入样式调整
+// 样式调整
 @import "reboot";
 // minxin
 @import "mixin";
 
-// 导入button组件样式
+// button组件样式
 @import "../components/Button/style";
+
+// menu组件样式
+@import "../components/Menu/style";
